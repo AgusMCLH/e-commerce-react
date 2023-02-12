@@ -1,0 +1,23 @@
+.avatar_container{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 30px;
+    padding: 3px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: border .3s;
+}
+
+.avatar_container img{
+    width: 50px;
+    border-radius: 50%;
+    
+}
+.avatar_container:hover{
+    
+    border: 2px solid rgb(10, 250, 42);
+    
+}

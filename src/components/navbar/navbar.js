@@ -1,13 +1,12 @@
 import React from 'react';
 import './navbar.css';
 import carrito from './../../img/cartSVG.svg';
+import Avatar from './../avatar/Avatar';
 const Navbar = () => {
   return (
     <>
       <header>
-        <div className="avatar_container">
-          <img src="http://placekitten.com/300/300" alt="a" />
-        </div>
+        <Avatar />
         <ul>
           <li>
             <a href="#a"> Elemento #1</a>

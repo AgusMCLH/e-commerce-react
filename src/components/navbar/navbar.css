@@ -48,20 +48,3 @@ header ul{
     border-radius: 50%;
 }
 
-.avatar_container{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 30px;
-    padding: 3px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 2px solid black;
-    cursor: pointer;
-}
-
-.avatar_container img{
-    width: 50px;
-    border-radius: 50%;
-    
-}
