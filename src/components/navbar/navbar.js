@@ -1,34 +1,65 @@
 import React from 'react';
 import './navbar.css';
-import carrito from './../../img/cartSVG.svg';
+import Carrito from './../carrito/carrito';
 import Avatar from './../avatar/Avatar';
 const Navbar = () => {
   return (
     <>
       <header>
-        <Avatar />
-        <ul>
-          <li>
-            <a href="#a"> Elemento #1</a>
-          </li>
-          <li>
-            <a href="#a"> Elemento #2</a>
-          </li>
-          <li>
-            <a href="#a"> Elemento #3</a>
-          </li>
-          <li>
-            <a href="#a"> Elemento #4</a>
-          </li>
-          <li>
-            <a href="#a"> Elemento #5</a>
-          </li>
-        </ul>
-        <div className="navbar_carrito-container">
-          <div className="navbar_carrito">
-            <img src={carrito} alt="Carrito sin mas" />
-            <div className="puntito"></div>
-          </div>
+        <div className="brandname">
+          <p>Latiendita</p>
+        </div>
+        <div className="header2">
+          <Avatar />
+          <ul>
+            <li>
+              <a href="#a"> Home</a>
+            </li>
+            <li>
+              <a href="#a"> Zapatillas</a>
+              <ul>
+                <li>
+                  <a href="#a">Nike</a>
+                </li>
+                <li>
+                  <a href="#a">Adidas</a>
+                </li>
+                <li>
+                  <a href="#a">Ver Todas</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#a"> Remeras</a>
+              <ul>
+                <li>
+                  <a href="#a">Nike</a>
+                </li>
+                <li>
+                  <a href="#a">Adidas</a>
+                </li>
+                <li>
+                  <a href="#a">Ver Todas</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#a"> Jeans</a>
+              <ul>
+                <li>
+                  <a href="#a">Levi's</a>
+                </li>
+
+                <li>
+                  <a href="#a">Ver Todas</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#a"> Sobre Nosotros</a>
+            </li>
+          </ul>
+          <Carrito />
         </div>
       </header>
     </>

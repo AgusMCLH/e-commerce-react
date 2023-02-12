@@ -1,0 +1,26 @@
+
+
+.navbar_carrito-container{
+    position: absolute;
+    right: 28px;
+    scale: 1.3;
+    height: 50%;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.navbar_carrito{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.puntito{
+    position: absolute;
+    right: -4px;
+    top: -4px;
+    background-color: red;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
