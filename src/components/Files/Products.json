@@ -96,7 +96,7 @@
         "id": 10,
         "nombre": "Solarimpact Pro",
         "descripcion": "Zapatilla de running de alto rendimiento con amortiguación reactiva y una suela de goma duradera para una mayor tracción en cualquier superficie.",
-      "gender": "",
+      "gender": "U",
 "price": 10,
 "brand": "Añidas",
 "stock": 50
@@ -106,7 +106,7 @@
         "id": 11,
         "nombre": "Thunderflight 8",
         "descripcion": "Zapatilla de baloncesto con una gran sujeción y amortiguación para un mayor rendimiento en la cancha, con un diseño innovador que te hará destacar.",
-      "gender": "",
+      "gender": "M",
 "price": 10,
 "brand": "Ñike",
 "stock": 50
@@ -115,7 +115,7 @@
         "id": 12,
         "nombre": "Swift Edge Pro",
         "descripcion": "Zapatilla de entrenamiento con una amortiguación suave y una gran sujeción para una mayor comodidad durante el entrenamiento, con una suela exterior de goma resistente para mayor durabilidad.",
-      "gender": "",
+      "gender": "U",
 "price": 10,
 "brand": "Añidas",
 "stock": 50
@@ -124,7 +124,7 @@
         "id": 13,
         "nombre": "Air Jump Pro",
         "descripcion": "Zapatilla de baloncesto con una gran amortiguación y sujeción, con un diseño moderno y elegante que hará que destaques en la cancha.",
-      "gender": "",
+      "gender": "F",
 "price": 10,
 "brand": "Ñordan",
 "stock": 50
