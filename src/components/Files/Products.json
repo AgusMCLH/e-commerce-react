@@ -3,253 +3,304 @@
 
 [
     {
-      "id": 1,
+      "id": 0,
       "nombre": "Air Zoom Tempo",
-      "descripcion": "Las zapatillas Air Zoom Tempo son una opción perfecta para corredores y atletas en general que buscan un calzado con gran capacidad de respuesta y amortiguación."
+      "descripcion": "Las zapatillas Air Zoom Tempo son una opción perfecta para corredores y atletas en general que buscan un calzado con gran capacidad de respuesta y amortiguación.",
+      "gender": "M"
+    },
+    {
+      "id": 1,
+      "nombre": "Lunar Force 7",
+      "descripcion": "Las zapatillas Lunar Force 7 cuentan con una suela Lunarlon y una parte superior de cuero de primera calidad, lo que las convierte en una excelente opción para deportes y actividades casuales.",
+      "gender": "M"
     },
     {
       "id": 2,
-      "nombre": "Lunar Force 7",
-      "descripcion": "Las zapatillas Lunar Force 7 cuentan con una suela Lunarlon y una parte superior de cuero de primera calidad, lo que las convierte en una excelente opción para deportes y actividades casuales."
+      "nombre": "Free Run Elite",
+      "descripcion": "Las zapatillas Free Run Elite son un modelo minimalista y ligero, con una parte superior de malla transpirable y una suela flexible que proporciona un gran agarre y estabilidad.",
+      "gender": "M"
     },
     {
       "id": 3,
-      "nombre": "Free Run Elite",
-      "descripcion": "Las zapatillas Free Run Elite son un modelo minimalista y ligero, con una parte superior de malla transpirable y una suela flexible que proporciona un gran agarre y estabilidad."
+      "nombre": "Hyperflex Pro",
+      "descripcion": "Las zapatillas Hyperflex Pro son una opción innovadora y vanguardista, con una parte superior de tejido elástico y una suela de goma ultraflexible que proporciona un gran confort y una gran capacidad de respuesta.",
+      "gender": "F"
     },
     {
       "id": 4,
-      "nombre": "Hyperflex Pro",
-      "descripcion": "Las zapatillas Hyperflex Pro son una opción innovadora y vanguardista, con una parte superior de tejido elástico y una suela de goma ultraflexible que proporciona un gran confort y una gran capacidad de respuesta."
+      "nombre": "Swift React",
+      "descripcion": "Las zapatillas Swift React son ideales para deportes de alto impacto, con una suela React y una parte superior de malla transpirable que proporciona una gran ventilación y confort.",
+      "gender": "M"
     },
     {
       "id": 5,
-      "nombre": "Swift React",
-      "descripcion": "Las zapatillas Swift React son ideales para deportes de alto impacto, con una suela React y una parte superior de malla transpirable que proporciona una gran ventilación y confort."
+      "nombre": "Blaze Force 7",
+      "descripcion": "Las zapatillas Blaze Force 7 cuentan con una parte superior de cuero y una suela de goma resistente, lo que las hace ideales para actividades al aire libre y para deportes de contacto.",
+      "gender": "M"
     },
     {
       "id": 6,
-      "nombre": "Blaze Force 7",
-      "descripcion": "Las zapatillas Blaze Force 7 cuentan con una parte superior de cuero y una suela de goma resistente, lo que las hace ideales para actividades al aire libre y para deportes de contacto."
+      "nombre": "Air Edge Force",
+      "descripcion": "Las zapatillas Air Edge Force son una opción clásica y elegante, con una parte superior de cuero y una suela de goma resistente que proporciona un gran agarre y estabilidad.",
+      "gender": "F"
     },
     {
       "id": 7,
-      "nombre": "Air Edge Force",
-      "descripcion": "Las zapatillas Air Edge Force son una opción clásica y elegante, con una parte superior de cuero y una suela de goma resistente que proporciona un gran agarre y estabilidad."
+      "nombre": "Lunar Glide Pro",
+      "descripcion": "Las zapatillas Lunar Glide Pro son un modelo de alto rendimiento, con una suela Lunarlon y una parte superior de malla transpirable que proporciona un gran confort y una gran capacidad de respuesta.",
+      "gender": "M"
     },
     {
       "id": 8,
-      "nombre": "Lunar Glide Pro",
-      "descripcion": "Las zapatillas Lunar Glide Pro son un modelo de alto rendimiento, con una suela Lunarlon y una parte superior de malla transpirable que proporciona un gran confort y una gran capacidad de respuesta."
+      "nombre": "Airfire Pro",
+      "descripcion": "Las zapatillas Airfire Pro son una opción moderna y dinámica, con una suela Air y una parte superior de malla transpirable que proporciona una gran ventilación y comodidad.",
+      "gender": "F"
     },
     {
       "id": 9,
-      "nombre": "Airfire Pro",
-      "descripcion": "Las zapatillas Airfire Pro son una opción moderna y dinámica, con una suela Air y una parte superior de malla transpirable que proporciona una gran ventilación y comodidad."
+      "nombre": "Revolution 7",
+      "descripcion": "Las zapatillas Revolution 7 son un modelo minimalista y elegante, con una parte superior de malla transpirable y una suela de goma resistente que proporciona un gran agarre y estabilidad.",
+      "gender": "F"
     },
     {
-      "id": 10,
-      "nombre": "Revolution 7",
-      "descripcion": "Las zapatillas Revolution 7 son un modelo minimalista y elegante, con una parte superior de malla transpirable y una suela de goma resistente que proporciona un gran agarre y estabilidad."
+        "id": 10,
+        "nombre": "Solarimpact Pro",
+        "descripcion": "Zapatilla de running de alto rendimiento con amortiguación reactiva y una suela de goma duradera para una mayor tracción en cualquier superficie.",
+      "gender": ""
+
     },
     {
         "id": 11,
-        "nombre": "Solarimpact Pro",
-        "descripcion": "Zapatilla de running de alto rendimiento con amortiguación reactiva y una suela de goma duradera para una mayor tracción en cualquier superficie."
+        "nombre": "Thunderflight 8",
+        "descripcion": "Zapatilla de baloncesto con una gran sujeción y amortiguación para un mayor rendimiento en la cancha, con un diseño innovador que te hará destacar.",
+      "gender": ""
     },
     {
         "id": 12,
-        "nombre": "Thunderflight 8",
-        "descripcion": "Zapatilla de baloncesto con una gran sujeción y amortiguación para un mayor rendimiento en la cancha, con un diseño innovador que te hará destacar."
+        "nombre": "Swift Edge Pro",
+        "descripcion": "Zapatilla de entrenamiento con una amortiguación suave y una gran sujeción para una mayor comodidad durante el entrenamiento, con una suela exterior de goma resistente para mayor durabilidad.",
+      "gender": ""
     },
     {
         "id": 13,
-        "nombre": "Swift Edge Pro",
-        "descripcion": "Zapatilla de entrenamiento con una amortiguación suave y una gran sujeción para una mayor comodidad durante el entrenamiento, con una suela exterior de goma resistente para mayor durabilidad."
+        "nombre": "Air Jump Pro",
+        "descripcion": "Zapatilla de baloncesto con una gran amortiguación y sujeción, con un diseño moderno y elegante que hará que destaques en la cancha.",
+      "gender": ""
     },
     {
         "id": 14,
-        "nombre": "Air Jump Pro",
-        "descripcion": "Zapatilla de baloncesto con una gran amortiguación y sujeción, con un diseño moderno y elegante que hará que destaques en la cancha."
+        "nombre": "Lunarphase Pro",
+        "descripcion": "Zapatilla de entrenamiento con una amortiguación suave y una gran sujeción para una mayor comodidad durante el entrenamiento, con una suela de goma resistente para mayor tracción en cualquier superficie.",
+      "gender": ""
     },
     {
         "id": 15,
-        "nombre": "Lunarphase Pro",
-        "descripcion": "Zapatilla de entrenamiento con una amortiguación suave y una gran sujeción para una mayor comodidad durante el entrenamiento, con una suela de goma resistente para mayor tracción en cualquier superficie."
+        "nombre": "Stormstrike Pro",
+        "descripcion": "Zapatilla de running con una amortiguación reactiva y una excelente tracción en todas las superficies, con un diseño moderno y estilizado que te hará destacar.",
+      "gender": ""
     },
     {
         "id": 16,
-        "nombre": "Stormstrike Pro",
-        "descripcion": "Zapatilla de running con una amortiguación reactiva y una excelente tracción en todas las superficies, con un diseño moderno y estilizado que te hará destacar."
+        "nombre": "Air Stride Pro",
+        "descripcion": "Zapatilla de entrenamiento con una amortiguación suave y una gran sujeción para una mayor comodidad durante el entrenamiento, con una suela exterior de goma duradera para mayor tracción en cualquier superficie.",
+      "gender": ""
     },
     {
         "id": 17,
-        "nombre": "Air Stride Pro",
-        "descripcion": "Zapatilla de entrenamiento con una amortiguación suave y una gran sujeción para una mayor comodidad durante el entrenamiento, con una suela exterior de goma duradera para mayor tracción en cualquier superficie."
+        "nombre": "Lunarshift Elite",
+        "descripcion": "Zapatilla de running de alta gama con una amortiguación suave y una excelente respuesta para una mayor comodidad y rendimiento, con un diseño elegante y moderno.",
+      "gender": ""
     },
     {
         "id": 18,
-        "nombre": "Lunarshift Elite",
-        "descripcion": "Zapatilla de running de alta gama con una amortiguación suave y una excelente respuesta para una mayor comodidad y rendimiento, con un diseño elegante y moderno."
+        "nombre": "Thunderzoom 9",
+        "descripcion": "Zapatilla de baloncesto con una gran sujeción y amortiguación para un mayor rendimiento en la cancha, con una suela exterior de goma resistente para mayor durabilidad.",
+      "gender": ""
     },
     {
         "id": 19,
-        "nombre": "Thunderzoom 9",
-        "descripcion": "Zapatilla de baloncesto con una gran sujeción y amortiguación para un mayor rendimiento en la cancha, con una suela exterior de goma resistente para mayor durabilidad."
+        "nombre": "Zoomstrike Pro",
+        "descripcion": "Zapatilla de running con una amortiguación reactiva y una excelente tracción en todas las superficies, con un diseño moderno y estilizado que te hará destacar.",
+      "gender": ""
     },
     {
         "id": 20,
-        "nombre": "Zoomstrike Pro",
-        "descripcion": "Zapatilla de running con una amortiguación reactiva y una excelente tracción en todas las superficies, con un diseño moderno y estilizado que te hará destacar."
+        "nombre": "Shadowfly React",
+        "descripcion": "Zapatilla ligera y cómoda con amortiguación reactiva.",
+      "gender": ""
     },
     {
         "id": 21,
-        "nombre": "Shadowfly React",
-        "descripcion": "Zapatilla ligera y cómoda con amortiguación reactiva."
+        "nombre": "Ultralight 9",
+        "descripcion": "Zapatilla ultraligera y transpirable para una mayor sensación de libertad.",
+      "gender": ""
     },
     {
         "id": 22,
-        "nombre": "Ultralight 9",
-        "descripcion": "Zapatilla ultraligera y transpirable para una mayor sensación de libertad."
+        "nombre": "Flex Elite",
+        "descripcion": "Zapatilla de entrenamiento con excelente soporte y flexibilidad.",
+      "gender": ""
     },
     {
         "id": 23,
-        "nombre": "Flex Elite",
-        "descripcion": "Zapatilla de entrenamiento con excelente soporte y flexibilidad."
+        "nombre": "Air Blade Runner",
+        "descripcion": "Zapatilla de alto rendimiento con una combinación de amortiguación y sujeción.",
+      "gender": ""
     },
     {
         "id": 24,
-        "nombre": "Air Blade Runner",
-        "descripcion": "Zapatilla de alto rendimiento con una combinación de amortiguación y sujeción."
+        "nombre": "Lunar Impact Pro",
+        "descripcion": "Zapatilla con amortiguación suave para un aterrizaje cómodo y transiciones suaves.",
+      "gender": ""
     },
     {
         "id": 25,
-        "nombre": "Lunar Impact Pro",
-        "descripcion": "Zapatilla con amortiguación suave para un aterrizaje cómodo y transiciones suaves."
+        "nombre": "Retro Edge 8",
+        "descripcion": "Zapatilla clásica con una silueta elegante y comodidad moderna.",
+      "gender": ""
     },
     {
         "id": 26,
-        "nombre": "Retro Edge 8",
-        "descripcion": "Zapatilla clásica con una silueta elegante y comodidad moderna."
+        "nombre": "Air Velocity Pro",
+        "descripcion": "Zapatilla de baloncesto con suela de goma para una excelente tracción en la cancha.",
+      "gender": ""
     },
     {
         "id": 27,
-        "nombre": "Air Velocity Pro",
-        "descripcion": "Zapatilla de baloncesto con suela de goma para una excelente tracción en la cancha."
+        "nombre": "Solarstrike Pro",
+        "descripcion": "Zapatilla de running con una parte superior de malla transpirable y una amortiguación receptiva.",
+      "gender": ""
     },
     {
         "id": 28,
-        "nombre": "Solarstrike Pro",
-        "descripcion": "Zapatilla de running con una parte superior de malla transpirable y una amortiguación receptiva."
+        "nombre": "Thunderbolt 9",
+        "descripcion": "Zapatilla de entrenamiento ligera y duradera con una gran sujeción.",
+      "gender": ""
     },
     {
         "id": 29,
-        "nombre": "Thunderbolt 9",
-        "descripcion": "Zapatilla de entrenamiento ligera y duradera con una gran sujeción."
+        "nombre": "Air Triaxx",
+        "descripcion": "Zapatilla clásica con una combinación de amortiguación y sujeción para una mayor comodidad.",
+      "gender": ""
     },
     {
         "id": 30,
-        "nombre": "Air Triaxx",
-        "descripcion": "Zapatilla clásica con una combinación de amortiguación y sujeción para una mayor comodidad."
+        "nombre": "Pulse Edge 7",
+        "descripcion": "Zapatilla de entrenamiento con una excelente combinación de sujeción y comodidad.",
+      "gender": ""
     },
     {
         "id": 31,
-        "nombre": "Pulse Edge 7",
-        "descripcion": "Zapatilla de entrenamiento con una excelente combinación de sujeción y comodidad."
+        "nombre": "Firestep Pro",
+        "descripcion": "Zapatilla de baloncesto con una gran amortiguación y soporte para un mayor rendimiento en la cancha.",
+      "gender": ""
     },
     {
         "id": 32,
-        "nombre": "Firestep Pro",
-        "descripcion": "Zapatilla de baloncesto con una gran amortiguación y soporte para un mayor rendimiento en la cancha."
+        "nombre": "Zoom Vantage Elite",
+        "descripcion": "Zapatilla de running de alta gama con una amortiguación suave y una excelente tracción en todas las superficies.",
+      "gender": ""
     },
     {
         "id": 33,
-        "nombre": "Zoom Vantage Elite",
-        "descripcion": "Zapatilla de running de alta gama con una amortiguación suave y una excelente tracción en todas las superficies."
+        "nombre": "Air Epic React",
+        "descripcion": "Zapatilla de running con una amortiguación reactiva y una parte superior transpirable para mayor comodidad.",
+      "gender": ""
     },
     {
         "id": 34,
-        "nombre": "Air Epic React",
-        "descripcion": "Zapatilla de running con una amortiguación reactiva y una parte superior transpirable para mayor comodidad."
+        "nombre": "Solarforce Pro",
+        "descripcion": "Zapatilla de entrenamiento con una parte superior de malla transpirable y una suela de goma duradera para una mayor tracción.",
+      "gender": ""
     },
     {
         "id": 35,
-        "nombre": "Solarforce Pro",
-        "descripcion": "Zapatilla de entrenamiento con una parte superior de malla transpirable y una suela de goma duradera para una mayor tracción."
+        "nombre": "Thunderstorm Pro",
+        "descripcion": "Zapatilla de baloncesto con una gran amortiguación y sujeción para un mayor rendimiento en la cancha.",
+      "gender": ""
     },
     {
         "id": 36,
-        "nombre": "Thunderstorm Pro",
-        "descripcion": "Zapatilla de baloncesto con una gran amortiguación y sujeción para un mayor rendimiento en la cancha."
+        "nombre": "Eclipse Pro",
+        "descripcion": "Zapatilla de entrenamiento con una excelente combinación de sujeción y comodidad.",
+      "gender": ""
     },
     {
         "id": 37,
-        "nombre": "Eclipse Pro",
-        "descripcion": "Zapatilla de entrenamiento con una excelente combinación de sujeción y comodidad."
+        "nombre": "Flightfire Pro",
+        "descripcion": "Zapatilla de baloncesto con una amortiguación suave y una gran tracción para un mayor rendimiento en la cancha.",
+      "gender": ""
     },
     {
         "id": 38,
-        "nombre": "Flightfire Pro",
-        "descripcion": "Zapatilla de baloncesto con una amortiguación suave y una gran tracción para un mayor rendimiento en la cancha."
+        "nombre": "Solarburst Pro",
+        "descripcion": "Zapatilla de entrenamiento con una parte superior de malla transpirable y una gran sujeción para mayor comodidad.",
+      "gender": ""
     },
     {
         "id": 39,
-        "nombre": "Solarburst Pro",
-        "descripcion": "Zapatilla de entrenamiento con una parte superior de malla transpirable y una gran sujeción para mayor comodidad."
+        "nombre": "Thunderstrike 7",
+        "descripcion": "Zapatilla de entrenamiento con una gran amortiguación y soporte para una mayor comodidad durante el entrenamiento.",
+      "gender": ""
     },
     {
         "id": 40,
-        "nombre": "Thunderstrike 7",
-        "descripcion": "Zapatilla de entrenamiento con una gran amortiguación y soporte para una mayor comodidad durante el entrenamiento."
+        "nombre": "Air Intrigue",
+        "descripcion": "Zapatilla de entrenamiento con una amortiguación reactiva y una suela de goma duradera para una mayor tracción.",
+      "gender": ""
     },
     {
         "id": 41,
-        "nombre": "Air Intrigue",
-        "descripcion": "Zapatilla de entrenamiento con una amortiguación reactiva y una suela de goma duradera para una mayor tracción."
+        "nombre": "Lunar Instinct",
+        "descripcion": "Zapatilla de entrenamiento con una amortiguación suave y una gran sujeción para una mayor comodidad durante el entrenamiento.",
+      "gender": ""
     },
     {
         "id": 42,
-        "nombre": "Lunar Instinct",
-        "descripcion": "Zapatilla de entrenamiento con una amortiguación suave y una gran sujeción para una mayor comodidad durante el entrenamiento."
+        "nombre": "Rebelforce Pro",
+        "descripcion": "Zapatilla de baloncesto con una gran sujeción y amortiguación para un mayor rendimiento en la cancha.",
+      "gender": ""
     },
     {
         "id": 43,
-        "nombre": "Rebelforce Pro",
-        "descripcion": "Zapatilla de baloncesto con una gran sujeción y amortiguación para un mayor rendimiento en la cancha."
+        "nombre": "Stormrun Elite",
+        "descripcion": "Zapatilla de running con una amortiguación reactiva y una excelente tracción en todas las superficies.",
+      "gender": ""
     },
     {
         "id": 44,
-        "nombre": "Stormrun Elite",
-        "descripcion": "Zapatilla de running con una amortiguación reactiva y una excelente tracción en todas las superficies."
+        "nombre": "Air Fusion Pro",
+        "descripcion": "Zapatilla de entrenamiento con una parte superior de malla transpirable y una suela de goma duradera para una mayor tracción.",
+      "gender": ""
     },
     {
         "id": 45,
-        "nombre": "Air Fusion Pro",
-        "descripcion": "Zapatilla de entrenamiento con una parte superior de malla transpirable y una suela de goma duradera para una mayor tracción."
+        "nombre": "React Strike Pro",
+        "descripcion": "Zapatilla de running con una amortiguación suave y una excelente respuesta para una mayor comodidad y rendimiento.",
+      "gender": ""
     },
     {
         "id": 46,
-        "nombre": "React Strike Pro",
-        "descripcion": "Zapatilla de running con una amortiguación suave y una excelente respuesta para una mayor comodidad y rendimiento."
+        "nombre": "Fusionforce Pro",
+        "descripcion": "Zapatilla de baloncesto con una gran sujeción y una amortiguación reactiva para un mayor rendimiento en la cancha.",
+      "gender": ""
     },
     {
         "id": 47,
-        "nombre": "Fusionforce Pro",
-        "descripcion": "Zapatilla de baloncesto con una gran sujeción y una amortiguación reactiva para un mayor rendimiento en la cancha."
+        "nombre": "Zoom Strike Elite",
+        "descripcion": "Zapatilla de running de alta gama con una amortiguación suave y una excelente tracción en todas las superficies.",
+      "gender": ""
     },
     {
         "id": 48,
-        "nombre": "Zoom Strike Elite",
-        "descripcion": "Zapatilla de running de alta gama con una amortiguación suave y una excelente tracción en todas las superficies."
+        "nombre": "Air Thunder Pro",
+        "descripcion": "Zapatilla de baloncesto con una gran sujeción y amortiguación para un mayor rendimiento en la cancha.",
+      "gender": ""
     },
     {
         "id": 49,
-        "nombre": "Air Thunder Pro",
-        "descripcion": "Zapatilla de baloncesto con una gran sujeción y amortiguación para un mayor rendimiento en la cancha."
-    },
-    {
-        "id": 50,
         "nombre": "Lunar Shift Pro",
-        "descripcion": "Zapatilla de entrenamiento con una amortiguación suave y una gran sujeción para una mayor comodidad durante el entrenamiento."
+        "descripcion": "Zapatilla de entrenamiento con una amortiguación suave y una gran sujeción para una mayor comodidad durante el entrenamiento.",
+      "gender": ""
     }
 ]
