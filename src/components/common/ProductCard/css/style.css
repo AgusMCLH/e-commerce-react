@@ -20,7 +20,7 @@
   justify-content: center;
 }
 .Card_el_container a .card_Container img {
-  width: 70%;
+  height: 70%;
 }
 .Card_el_container a .card_Container p {
   text-align: center;

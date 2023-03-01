@@ -19,7 +19,7 @@ const Counter =()=>{
 
     return <div className="Counter">
         <div className="mas" onClick={sumarNumero}>+</div>
-        <div className="number"><p id="number">{valor}</p></div>
+        <div className="number"><p id="productquantity">{valor}</p></div>
         <div className="menos" onClick={restarNumero}>-</div>
     </div>
 }

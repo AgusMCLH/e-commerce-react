@@ -4,6 +4,7 @@ import { useState } from "react";
 import Loader from "../../common/cargador/cargador";
 import Counter from "../../common/counter/Counter";
 import "./css/Style.css"
+import carritoSVG from "./../../../img/cartSVG.svg"
 
 const ItemContainer =()=>{
     let {id}=useParams()
@@ -18,13 +19,13 @@ const ItemContainer =()=>{
           });
       }, [id]);
 
-      console.log(Producto);
 
       if (Producto.length===0) {
         return <Loader></Loader>
       }
 
-      let {thumbnail, title, price}=Producto
+      let {title, price}=Producto
+      let thumbnail = Producto.pictures[0].url
 
       return <div className="ItemWindow">
                 <div className="product__Container">
@@ -33,7 +34,15 @@ const ItemContainer =()=>{
                   </div>
                   <div className="product_der__panel">
                   <p className="product__title">{title}</p>
+                  <p className="product__price">${price}</p>
+                  <div className="buttonContainer">
                   <Counter></Counter>
+                  <div className="product_addToCart">
+                    <div>
+                      <img src={carritoSVG} alt="carrito icono" /><p>Add to cart</p>
+                    </div>
+                  </div>
+                  </div>
                   </div>
                 </div>
               </div>;
