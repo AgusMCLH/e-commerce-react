@@ -2,6 +2,7 @@ import React from 'react';
 import './navbar.css';
 import Carrito from './../carrito/carrito';
 import Avatar from './../avatar/Avatar';
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <>
@@ -13,7 +14,7 @@ const Navbar = () => {
           <Avatar />
           <ul>
             <li>
-              <a href="#a"> Home</a>
+              <Link to={'./'}> Home</Link>
             </li>
             <li>
               <a href="#a"> Zapatillas</a>
