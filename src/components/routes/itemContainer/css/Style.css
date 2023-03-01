@@ -1,0 +1,27 @@
+.ItemWindow .product__Container {
+  display: flex;
+  width: 80%;
+  margin: 0px auto;
+  overflow: hidden;
+}
+.ItemWindow .product__Container .product__container__img {
+  width: 50%;
+  display: grid;
+  place-items: center;
+}
+.ItemWindow .product__Container .product__container__img .product__img {
+  margin: auto;
+  grid-area: izq;
+  width: 450px;
+}
+.ItemWindow .product__Container .product_der__panel {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.ItemWindow .product__Container .product_der__panel .product__title {
+  font-size: 30px;
+  font-weight: 700;
+}/*# sourceMappingURL=Style.css.map */

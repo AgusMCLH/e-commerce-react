@@ -9,6 +9,24 @@
   color: black;
 }
 .Card_el_container a .card_Container {
-  width: 300px;
+  position: relative;
+  border: 1px solid black;
+  width: 80vw;
+  max-width: 300px;
   height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Card_el_container a .card_Container img {
+  width: 70%;
+}
+.Card_el_container a .card_Container p {
+  text-align: center;
+}
+.Card_el_container a .card_Container .card__precio {
+  position: absolute;
+  bottom: 2px;
+  right: 5px;
 }/*# sourceMappingURL=style.css.map */

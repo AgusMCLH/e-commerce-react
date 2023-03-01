@@ -9,7 +9,6 @@ const Call = () => {
       .then((res) => res.json())
       .then((res) => {
         funcionAgrgarProducto(res.results);
-        console.log(res.results);
       });
   }, []);
   if (listaDeProductos.length===0) {

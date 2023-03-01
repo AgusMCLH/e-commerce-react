@@ -1,0 +1,29 @@
+.ItemWindow{
+    .product__Container{
+        display: flex;
+        width: 80%;
+        margin: 0px auto;
+        overflow: hidden;
+        .product__container__img{
+            width: 50%;
+            display: grid;
+            place-items: center;
+            .product__img{
+                margin: auto;
+                grid-area: izq;
+                width: 450px;
+            }
+        }
+        .product_der__panel{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            .product__title{
+                font-size: 30px;
+                font-weight: 700;
+            }
+        }
+    }
+}
