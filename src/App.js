@@ -7,6 +7,8 @@ import Navbar from './components/navbar/navbar';
 import Home from './components/routes/home';
 import ItemContainer from './components/routes/itemContainer/itemContainer';
 import Clothes from './components/routes/Clothes';
+import Electronics from './components/routes/Electronics';
+import Jewlery from './components/routes/Jewlery';
 // import Test from './components/test/Test';
 
 function App() {
@@ -27,6 +29,12 @@ function App() {
             path="/clothes/:type"
             element={<Clothes></Clothes>}
           ></Route>
+          <Route
+            exact
+            path="/electronics"
+            element={<Electronics></Electronics>}
+          ></Route>
+          <Route exact path="/jewlery" element={<Jewlery></Jewlery>}></Route>
         </Routes>
       </BrowserRouter>
     </>

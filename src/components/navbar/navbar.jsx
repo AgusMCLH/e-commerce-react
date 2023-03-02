@@ -31,30 +31,10 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <a href="#a"> Remeras</a>
-              <ul>
-                <li>
-                  <a href="#a">Nike</a>
-                </li>
-                <li>
-                  <a href="#a">Adidas</a>
-                </li>
-                <li>
-                  <a href="#a">Ver Todas</a>
-                </li>
-              </ul>
+              <Link to={'./electronics'}>Electrotecnia</Link>
             </li>
             <li>
-              <a href="#a"> Jeans</a>
-              <ul>
-                <li>
-                  <a href="#a">Levi's</a>
-                </li>
-
-                <li>
-                  <a href="#a">Ver Todas</a>
-                </li>
-              </ul>
+              <Link to={'./jewlery'}> Joyeria</Link>
             </li>
             <li>
               <a href="#a"> Sobre Nosotros</a>
