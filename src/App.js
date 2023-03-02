@@ -9,7 +9,7 @@ import ItemContainer from './components/routes/itemContainer/itemContainer';
 import Clothes from './components/routes/Clothes';
 import Electronics from './components/routes/Electronics';
 import Jewlery from './components/routes/Jewlery';
-// import Test from './components/test/Test';
+import CheckOut from './components/routes/CheckOut/CheckOut';
 
 function App() {
   return (
@@ -34,6 +34,7 @@ function App() {
             path="/electronics"
             element={<Electronics></Electronics>}
           ></Route>
+          <Route exact path="/checkout" element={<CheckOut></CheckOut>}></Route>
           <Route exact path="/jewlery" element={<Jewlery></Jewlery>}></Route>
         </Routes>
       </BrowserRouter>
