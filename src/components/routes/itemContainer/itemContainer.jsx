@@ -12,11 +12,10 @@ const ItemContainer =()=>{
         
       ]);
       useEffect(() => {
-        fetch(`https://api.mercadolibre.com/items/${id}`)
-          .then((res) => res.json())
-          .then((res) => {
-            funcionAgrgarProducto(res);
-          });
+        
+          fetch(`https://fakestoreapi.com/products/${id}`)
+            .then(res=>res.json())
+            .then(json=>funcionAgrgarProducto(json))
       }, [id]);
 
 
@@ -24,13 +23,13 @@ const ItemContainer =()=>{
         return <Loader></Loader>
       }
 
-      let {title, price}=Producto
-      let thumbnail = Producto.pictures[0].url
+      let {title, price, image}=Producto
+      
 
       return <div className="ItemWindow">
                 <div className="product__Container">
                   <div className="product__container__img">
-                    <img className="product__img" src={thumbnail} alt={`${title} - img`} />
+                    <img className="product__img" src={image} alt={`${title} - img`} />
                   </div>
                   <div className="product_der__panel">
                   <p className="product__title">{title}</p>

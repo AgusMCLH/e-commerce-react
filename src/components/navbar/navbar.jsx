@@ -8,7 +8,7 @@ const Navbar = () => {
     <>
       <header>
         <div className="brandname">
-          <p>Latiendita</p>
+          <Link to={'./'}><p>La tiendita</p></Link>
         </div>
         <div className="header2">
           <Avatar />
@@ -17,16 +17,16 @@ const Navbar = () => {
               <Link to={'./'}> Home</Link>
             </li>
             <li>
-              <a href="#a"> Zapatillas</a>
+              <p> Ropa</p>
               <ul>
                 <li>
-                  <a href="#a">Nike</a>
+                  <Link to={'./clothes/1'}>Hombre</Link>
                 </li>
                 <li>
-                  <a href="#a">Adidas</a>
+                  <Link to={'./clothes/2'}>Mujer</Link>
                 </li>
                 <li>
-                  <a href="#a">Ver Todas</a>
+                  <Link to={'./clothes/3'}>Ver Todas</Link>
                 </li>
               </ul>
             </li>

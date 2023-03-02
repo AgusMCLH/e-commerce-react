@@ -5,12 +5,13 @@
   gap: 10px;
 }
 .Card_el_container a {
+  background-color: white;
   text-decoration: none;
   color: black;
+  border-radius: 5px;
 }
 .Card_el_container a .card_Container {
   position: relative;
-  border: 1px solid black;
   width: 80vw;
   max-width: 300px;
   height: 300px;
@@ -19,8 +20,19 @@
   align-items: center;
   justify-content: center;
 }
-.Card_el_container a .card_Container img {
-  height: 70%;
+.Card_el_container a .card_Container .img_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  min-width: 50%;
+  max-width: 70%;
+  max-height: 70%;
+}
+.Card_el_container a .card_Container .img_container img {
+  min-width: 70%;
+  max-width: 90%;
+  max-height: 90%;
 }
 .Card_el_container a .card_Container p {
   text-align: center;

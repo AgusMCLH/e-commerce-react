@@ -9,7 +9,7 @@ const Counter =()=>{
     },[])
     
     const restarNumero = ()=>{
-        if (valor!=1) {
+        if (valor!==1) {
             setvalor(valor-1)
         }
     }

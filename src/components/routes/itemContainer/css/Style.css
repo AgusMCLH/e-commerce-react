@@ -5,9 +5,15 @@
   overflow: hidden;
 }
 .ItemWindow .product__Container .product__container__img {
+  aspect-ratio: 1/1;
+  scale: 0.7;
+  border: 1px solid rgb(171, 171, 171);
+  background-color: white;
   width: 50%;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
 }
 .ItemWindow .product__Container .product__container__img .product__img {
   margin: auto;
@@ -22,6 +28,7 @@
   gap: 80px;
 }
 .ItemWindow .product__Container .product_der__panel .product__title {
+  text-align: center;
   margin-top: 80px;
   font-size: 30px;
   font-weight: 700;
