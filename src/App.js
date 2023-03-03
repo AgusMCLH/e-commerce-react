@@ -34,7 +34,7 @@ function App() {
             path="/electronics"
             element={<Electronics></Electronics>}
           ></Route>
-          <Route exact path="/checkout" element={<CheckOut></CheckOut>}></Route>
+          {/* <Route exact path="/checkout" element={<CheckOut></CheckOut>}></Route> */}
           <Route exact path="/jewlery" element={<Jewlery></Jewlery>}></Route>
         </Routes>
       </BrowserRouter>

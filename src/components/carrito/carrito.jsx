@@ -28,7 +28,7 @@ const Carrito = () => {
   } else {
     return (
       <div className="navbar_carrito-container">
-        <Link to={'/checkout'}>
+        <Link to={'#'}>
         <div className="navbar_carrito">
           <img src={carrito} alt="Carrito sin mas" />
           <div className="puntito active" id="cartdot">

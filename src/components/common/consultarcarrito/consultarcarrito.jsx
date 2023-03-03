@@ -1,19 +1,35 @@
 import React, {useEffect, useState} from "react";
 import List from "../list/List";
 
-const Consultarcarrito = ()=>{
-    let [carrito, crearcarrito] = useState([])
+const Consultarcarrito = ({cartsaved}) =>{
+    let ides = cartsaved.map((el)=>{return el.id});
+    let productos = []
     useEffect(()=>{
-        let carritotemporal = JSON.parse(localStorage.getItem('carrito')) || ''
-        let auxlist = [];
-        carritotemporal.map((el)=>{
-            fetch(`https://fakestoreapi.com/products/${el.id}`)
+        for (let i = 0; i < ides.length; i++) {
+            fetch(`https://fakestoreapi.com/products`)
             .then(res=>res.json())
-            .then(json=>auxlist.push(json))
-        })
-        crearcarrito(auxlist)
+            .then(json=>{
+                for (let i = 0; i < ides.length; i++) {
+                    for (let j = 0; j < json.length; j++) {
+                        if (ides[i]===json[j].id) {
+                            productos.push(json[j])
+                        }
+                        
+                    }
+                    
+                }
+
+            })    
+        }
     },[])
-    return <><List productos={carrito} name={'Productos'}></List></>
+    setTimeout(()=>{console.log(productos);},'500')
+
+    return <></>
 }
 
+
+
 export default Consultarcarrito
+
+
+
