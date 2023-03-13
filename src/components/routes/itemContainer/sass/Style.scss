@@ -18,7 +18,7 @@
             .product__img{
                 margin: auto;
                 grid-area: izq;
-                width: 450px;
+                max-width: 100%;
             }
         }
         .product_der__panel{

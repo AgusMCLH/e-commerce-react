@@ -6,10 +6,9 @@ import Navbar from './components/navbar/navbar';
 
 import Home from './components/routes/home';
 import ItemContainer from './components/routes/itemContainer/itemContainer';
-import Clothes from './components/routes/Clothes';
-import Electronics from './components/routes/Electronics';
-import Jewlery from './components/routes/Jewlery';
-import CheckOut from './components/routes/CheckOut/CheckOut';
+
+// import CheckOut from './components/routes/CheckOut/CheckOut';
+import Category from './components/routes/category';
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home></Home>}></Route>
-          {/* <Route exact path="/test" element={<Test></Test>}></Route> */}
           <Route
             exact
             path="/item/:id"
@@ -26,16 +24,11 @@ function App() {
           ></Route>
           <Route
             exact
-            path="/clothes/:type"
-            element={<Clothes></Clothes>}
+            path="/:categ/:type"
+            element={<Category></Category>}
           ></Route>
-          <Route
-            exact
-            path="/electronics"
-            element={<Electronics></Electronics>}
-          ></Route>
+          <Route exact path="/:categ" element={<Category></Category>}></Route>
           {/* <Route exact path="/checkout" element={<CheckOut></CheckOut>}></Route> */}
-          <Route exact path="/jewlery" element={<Jewlery></Jewlery>}></Route>
         </Routes>
       </BrowserRouter>
     </>

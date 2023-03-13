@@ -5,19 +5,33 @@ import Loader from "../../common/cargador/cargador";
 import Counter from "../../common/counter/Counter";
 import "./css/Style.css"
 import carritoSVG from "./../../../img/cartSVG.svg"
+import { getFirestore, doc, getDoc} from 'firebase/firestore'
+
 
 const ItemContainer =()=>{
     let {id}=useParams()
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-    const [Producto, funcionAgrgarProducto] = useState([
-        
-      ]);
-      useEffect(() => {
-        
-          fetch(`https://fakestoreapi.com/products/${id}`)
-            .then(res=>res.json())
-            .then(json=>funcionAgrgarProducto(json))
-      }, [id]);
+    const [Producto, funcionAgrgarProducto] = useState([]);
+
+      // useEffect(() => {
+      //     fetch(`https://fakestoreapi.com/products/${id}`)
+      //       .then(res=>res.json())
+      //       .then(json=>funcionAgrgarProducto(json))
+      // }, [id]);
+
+
+      useEffect(()=>{
+        const db= getFirestore()
+        const ItemRef = doc(db,'items',id)
+        getDoc(ItemRef).then((snapshot)=>{
+            const item = {
+                id: snapshot.id,
+                ...snapshot.data()
+            }
+            funcionAgrgarProducto(item);
+        })
+        console.log(Producto);
+    },[id])
 
 
       if (Producto.length===0) {

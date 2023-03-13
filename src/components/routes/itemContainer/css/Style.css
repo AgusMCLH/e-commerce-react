@@ -18,7 +18,7 @@
 .ItemWindow .product__Container .product__container__img .product__img {
   margin: auto;
   grid-area: izq;
-  width: 450px;
+  max-width: 100%;
 }
 .ItemWindow .product__Container .product_der__panel {
   width: 50%;

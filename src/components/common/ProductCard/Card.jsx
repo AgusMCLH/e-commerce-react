@@ -5,7 +5,6 @@ import "./css/style.css"
 
 
 const Card =({productos})=>{
-    console.log(productos);
     return <div className="Card_el_container">
     {productos.map(({ id, title, price, image }) => {
         return (
