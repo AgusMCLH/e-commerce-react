@@ -9,6 +9,7 @@ import ItemContainer from './components/routes/itemContainer/itemContainer';
 
 // import CheckOut from './components/routes/CheckOut/CheckOut';
 import Category from './components/routes/category';
+import ListItemByCategory from './components/routes/ListItemByCategory';
 
 function App() {
   return (
@@ -25,9 +26,19 @@ function App() {
           <Route
             exact
             path="/:categ/:type"
-            element={<Category></Category>}
+            element={<ListItemByCategory></ListItemByCategory>}
           ></Route>
-          <Route exact path="/:categ" element={<Category></Category>}></Route>
+          <Route
+            exact
+            path="/:categ"
+            element={<ListItemByCategory></ListItemByCategory>}
+          ></Route>
+          {/* <Route
+            exact
+            path="/:categ/:type"
+            element={<Category></Category>}
+          ></Route> */}
+          {/* <Route exact path="/:cate g" element={<Category></Category>}></Route> */}
           {/* <Route exact path="/checkout" element={<CheckOut></CheckOut>}></Route> */}
         </Routes>
       </BrowserRouter>
