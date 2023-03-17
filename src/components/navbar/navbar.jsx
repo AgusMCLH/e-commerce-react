@@ -1,6 +1,6 @@
 import React from 'react';
 import './navbar.css';
-import Carrito from './../carrito/carrito';
+import CarritoIcon from './../common/carrito/CarritoIcon';
 import Avatar from './../avatar/Avatar';
 import { Link } from 'react-router-dom';
 const Navbar = () => {
@@ -25,9 +25,6 @@ const Navbar = () => {
                 <li>
                   <Link to={'./clothes/2'}>Mujer</Link>
                 </li>
-                <li>
-                  <Link to={'./clothes/3'}>Ver Todas</Link>
-                </li>
               </ul>
             </li>
             <li>
@@ -40,7 +37,7 @@ const Navbar = () => {
               <a href="#a"> Sobre Nosotros</a>
             </li>
           </ul>
-          <Carrito />
+          <CarritoIcon />
         </div>
       </header>
     </>

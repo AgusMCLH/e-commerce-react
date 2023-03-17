@@ -1,10 +1,10 @@
-import React, {useEffect, useState} from "react";
-import List from "../list/List";
+import React, {useEffect} from "react";
+// import List from "../list/List";
 
 const Consultarcarrito = ({cartsaved}) =>{
     let ides = cartsaved.map((el)=>{return el.id});
-    let productos = []
     useEffect(()=>{
+        let productos = []
         for (let i = 0; i < ides.length; i++) {
             fetch(`https://fakestoreapi.com/products`)
             .then(res=>res.json())
@@ -21,8 +21,7 @@ const Consultarcarrito = ({cartsaved}) =>{
 
             })    
         }
-    },[])
-    setTimeout(()=>{console.log(productos);},'500')
+    },[ides])
 
     return <></>
 }

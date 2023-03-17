@@ -13,12 +13,6 @@ const ItemContainer =()=>{
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     const [Producto, funcionAgrgarProducto] = useState([]);
 
-      // useEffect(() => {
-      //     fetch(`https://fakestoreapi.com/products/${id}`)
-      //       .then(res=>res.json())
-      //       .then(json=>funcionAgrgarProducto(json))
-      // }, [id]);
-
 
       useEffect(()=>{
         const db= getFirestore()
@@ -30,7 +24,6 @@ const ItemContainer =()=>{
             }
             funcionAgrgarProducto(item);
         })
-        console.log(Producto);
     },[id])
 
 

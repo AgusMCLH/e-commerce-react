@@ -27,31 +27,20 @@ const ListItemByCategory =()=>{
                 return query(itemsCollection, where("category", "==", `women's clothing` ));
           
             default:
-              // return snapshot.category===`women's clothing` || snapshot.category===`men's clothing`;
+              return query(itemsCollection);
   
           }
         }
       }
-      let list=[]
 
-        
-          getDocs(q).then((snapshotList) => {
-            snapshotList.docs.map((snapshot) => {
-              
-                return list.push({
-                  id: snapshot.id,
-                  ...snapshot.data(),
-                }) 
-              
-              
-            });
-            funcionAgrgarProducto(list);
-            console.log(listaDeProductos);
+          getDocs(q()).then((snapshotList) => {
+            const docs = snapshotList.docs.map((snapshot) => ({
+              id: snapshot.id,
+              ...snapshot.data(),
+            }));
+            funcionAgrgarProducto(docs);
           });
-      }, [categ, type, listaDeProductos]);
-
-
-      
+      }, [categ, type]);
 
 
   if (listaDeProductos.length===0) {
