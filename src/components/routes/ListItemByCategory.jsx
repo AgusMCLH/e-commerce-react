@@ -10,17 +10,35 @@ const ListItemByCategory =()=>{
     let {categ, type}=useParams()
     console.log(categ, type);
     
+    
+    useEffect(() => {
+      const db = getFirestore();
+      const itemsCollection = collection(db, 'items');
+      let q = ()=>{
+        console.log(categ);
+        if (type===undefined){
+          return query(itemsCollection, where("category", "==", categ))
+        }else{
+          switch (type) {
+            case '1':
+              return query(itemsCollection, where("category", "==", `men's clothing` ));
+              
+              case '2':
+                return query(itemsCollection, where("category", "==", `women's clothing` ));
+          
+            default:
+              // return snapshot.category===`women's clothing` || snapshot.category===`men's clothing`;
+  
+          }
+        }
+      }
+      let list=[]
 
-      useEffect(() => {
-        const db = getFirestore();
-        const itemsCollection = collection(db, 'items');
-        let q = conditional(itemsCollection)
-        let list=[]
         
           getDocs(q).then((snapshotList) => {
-            const docs = snapshotList.docs.map((snapshot) => {
+            snapshotList.docs.map((snapshot) => {
               
-                list.push({
+                return list.push({
                   id: snapshot.id,
                   ...snapshot.data(),
                 }) 
@@ -30,27 +48,8 @@ const ListItemByCategory =()=>{
             funcionAgrgarProducto(list);
             console.log(listaDeProductos);
           });
-      }, [categ, type]);
+      }, [categ, type, listaDeProductos]);
 
-      const conditional = (itemsCollection)=>{
-        console.log(categ);
-        if (type===undefined){
-          return query(itemsCollection, where("category", "==", categ))
-        }else{
-          switch (type) {
-            case '1':
-              return query(itemsCollection, where("category", "==", `men's clothing` ));
-              break;
-              case '2':
-                return query(itemsCollection, where("category", "==", `women's clothing` ));
-              break;
-          
-            default:
-              // return snapshot.category===`women's clothing` || snapshot.category===`men's clothing`;
-
-          }
-        }
-      }
 
       
 

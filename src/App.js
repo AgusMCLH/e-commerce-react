@@ -7,8 +7,7 @@ import Navbar from './components/navbar/navbar';
 import Home from './components/routes/home';
 import ItemContainer from './components/routes/itemContainer/itemContainer';
 
-// import CheckOut from './components/routes/CheckOut/CheckOut';
-import Category from './components/routes/category';
+import CheckOut from './components/routes/CheckOut/CheckOut';
 import ListItemByCategory from './components/routes/ListItemByCategory';
 
 function App() {
@@ -33,13 +32,8 @@ function App() {
             path="/:categ"
             element={<ListItemByCategory></ListItemByCategory>}
           ></Route>
-          {/* <Route
-            exact
-            path="/:categ/:type"
-            element={<Category></Category>}
-          ></Route> */}
-          {/* <Route exact path="/:cate g" element={<Category></Category>}></Route> */}
-          {/* <Route exact path="/checkout" element={<CheckOut></CheckOut>}></Route> */}
+
+          <Route exact path="/checkout" element={<CheckOut></CheckOut>}></Route>
         </Routes>
       </BrowserRouter>
     </>
