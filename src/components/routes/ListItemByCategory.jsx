@@ -9,7 +9,8 @@ const ListItemByCategory =()=>{
     const [listaDeProductos, funcionAgrgarProducto] = useState([]);
     let {categ, type}=useParams()
     console.log(categ, type);
-    
+
+
     
     useEffect(() => {
       const db = getFirestore();

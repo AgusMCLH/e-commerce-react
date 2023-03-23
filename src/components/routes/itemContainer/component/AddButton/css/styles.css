@@ -1,0 +1,25 @@
+.ItemWindow .product__Container .product_der__panel .buttonContainer .product_addToCart {
+    margin-left: 16px;
+    height: 48px;
+    width: 50%;
+    border-radius: 5px;
+    background-color: red;
+    position: relative;
+    cursor: pointer;
+  }
+  .ItemWindow .product__Container .product_der__panel .buttonContainer .product_addToCart div {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .ItemWindow .product__Container .product_der__panel .buttonContainer .product_addToCart div p {
+    font-size: 25px;
+  }
+  .ItemWindow .product__Container .product_der__panel .buttonContainer .product_addToCart div img {
+    scale: 1.2;
+    position: relative;
+    top: -3px;
+  }

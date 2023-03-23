@@ -3,6 +3,7 @@ import './navbar.css';
 import CarritoIcon from './../common/carrito/CarritoIcon';
 import Avatar from './../avatar/Avatar';
 import { Link } from 'react-router-dom';
+import CartMenu from '../menues/CartMenu';
 const Navbar = () => {
   return (
     <>
@@ -39,6 +40,7 @@ const Navbar = () => {
           </ul>
           <CarritoIcon />
         </div>
+        <CartMenu></CartMenu>
       </header>
     </>
   );

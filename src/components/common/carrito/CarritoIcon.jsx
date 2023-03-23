@@ -1,14 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React, {useContext, useEffect, useState } from 'react';
 import './carrito.css';
 import carrito from './../../../img/cartSVG.svg';
 import { Link } from 'react-router-dom';
+import { CartContext } from '../../../contexts/CartContext';
 
 const CarritoIcon = () => {
   let [cantidad, setCantidad] = useState();
+  const {cartContextValue} = useContext(CartContext)
   useEffect(() => {
-    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-    setCantidad(carrito.length);
-  }, []);
+    if (cartContextValue[0].title===undefined) {
+      setCantidad(0)
+    }else{
+      setCantidad(cartContextValue.length);
+    }
+  }, [cartContextValue]);
 
   return <div className="navbar_carrito-container">
           <Link>
