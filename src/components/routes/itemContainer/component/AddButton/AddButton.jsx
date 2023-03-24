@@ -2,6 +2,7 @@ import React, {useContext} from "react";
 import carritoSVG from "./../../../../../img/cartSVG.svg"
 import { CartContext } from "../../../../../contexts/CartContext";
 import './css/styles.css'
+import BotonCarrito from "../../../../common/BotonCarrito/BotonCarrito";
 
 
 const AddButton = ({id, Producto}) =>{
@@ -44,7 +45,8 @@ const AddButton = ({id, Producto}) =>{
 
     return <div className="product_addToCart" >
     <div onClick={onClickHandler}>
-      <img src={carritoSVG} alt="cart icon" /><p>Add to cart</p>
+      <BotonCarrito></BotonCarrito>
+      {/* <img src={carritoSVG} alt="cart icon" /><p>Add to cart</p> */}
     </div>
   </div>
 }

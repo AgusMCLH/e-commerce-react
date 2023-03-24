@@ -3,7 +3,7 @@ import './Avatar.css';
 const Avatar = () => {
   return (
     <div className="avatar_container">
-      <img src="http://placekitten.com/300/300" alt="a" />
+      <img src="https://placebeard.it/500/500" alt="a" />
     </div>
   );
 };

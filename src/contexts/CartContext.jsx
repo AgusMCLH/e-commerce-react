@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const CartContext = React.createContext();
 
 const CartProvider = ({children})=>{
-    const [cartContextValue, setCartContext] = useState([{ title: undefined }]);
+    const [cartContextValue, setCartContext] = useState([{}]);
     const [cartMenuActive, setCartMenuActive] = useState(false) 
 
 

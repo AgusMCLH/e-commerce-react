@@ -4,13 +4,12 @@ import './App.css';
 
 import Navbar from './components/navbar/navbar';
 
-// import { CartContext } from './contexts/CartContext';
 import { CartProvider } from './contexts/CartContext';
 
 import Home from './components/routes/home';
 import ItemContainer from './components/routes/itemContainer/itemContainer';
 
-// import CheckOut from './components/routes/CheckOut/CheckOut';
+import CheckOut from './components/routes/CheckOut/CheckOut';
 import ListItemByCategory from './components/routes/ListItemByCategory';
 
 function App() {
@@ -37,11 +36,11 @@ function App() {
               element={<ListItemByCategory></ListItemByCategory>}
             ></Route>
 
-            {/* <Route
+            <Route
               exact
               path="/checkout"
               element={<CheckOut></CheckOut>}
-            ></Route> */}
+            ></Route>
           </Routes>
         </BrowserRouter>
       </CartProvider>
