@@ -44,7 +44,7 @@ const ItemContainer =()=>{
                   <p className="product__price">${Producto.price}</p>
                   <div className="buttonContainer">
                   <Counter></Counter>
-                  <AddButton></AddButton>
+                  <AddButton id={id} Producto={Producto}></AddButton>
                   </div>
                   </div>
                 </div>

@@ -5,6 +5,7 @@ import './css/styles.css'
 
 
 const AddButton = ({id, Producto}) =>{
+  console.log(id);
     const {cartContextValue, setCartContext} = useContext(CartContext)
     const onClickHandler = () =>{
         if (cartContextValue[0].title===undefined) {
@@ -12,7 +13,9 @@ const AddButton = ({id, Producto}) =>{
           setCartContext([
             {
             id,
+            price: Producto.price,
             title: Producto.title,
+            image: Producto.image,
             quantity: Number(document.getElementById('productquantity').innerText)}]
             )
         }else{
@@ -20,14 +23,18 @@ const AddButton = ({id, Producto}) =>{
           let index=cartContextValue.findIndex((el)=> el.id===id);
           if (index!==-1) {
             //Si lo cumple solo agrega la cantidad del spinner a la cantidad del producto en el carrito
-            cartContextValue[index].quantity+=Number(document.getElementById('productquantity').innerText)
+            let ArrayAuxiliar = cartContextValue;
+            ArrayAuxiliar[index].quantity+=Number(document.getElementById('productquantity').innerText)
+            setCartContext([...ArrayAuxiliar]);
           }else{
             // Si no lo encuentra, lo agrega
             setCartContext([
               ...cartContextValue,
               {
                 id,
+                price: Producto.price,
                 title: Producto.title,
+                image: Producto.image,
                 quantity: Number(document.getElementById('productquantity').innerText)}]
                 )
           }

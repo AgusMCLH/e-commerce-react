@@ -4,9 +4,10 @@ const CartContext = React.createContext();
 
 const CartProvider = ({children})=>{
     const [cartContextValue, setCartContext] = useState([{ title: undefined }]);
+    const [cartMenuActive, setCartMenuActive] = useState(false) 
 
 
-    return (<CartContext.Provider value={{ cartContextValue, setCartContext }}>
+    return (<CartContext.Provider value={{ cartContextValue, setCartContext, cartMenuActive, setCartMenuActive }}>
         {children}
     </CartContext.Provider>)
 }

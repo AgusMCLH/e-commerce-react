@@ -6,7 +6,7 @@ import { CartContext } from '../../../contexts/CartContext';
 
 const CarritoIcon = () => {
   let [cantidad, setCantidad] = useState();
-  const {cartContextValue} = useContext(CartContext)
+  const {cartContextValue, setCartMenuActive} = useContext(CartContext)
   useEffect(() => {
     if (cartContextValue[0].title===undefined) {
       setCantidad(0)
@@ -15,7 +15,11 @@ const CarritoIcon = () => {
     }
   }, [cartContextValue]);
 
-  return <div className="navbar_carrito-container">
+  const onClickHandler = () =>{
+    setCartMenuActive(true)
+  }
+
+  return <div className="navbar_carrito-container" onClick={onClickHandler}>
           <Link>
             <div className="navbar_carrito">
               <img src={carrito} alt="Carrito sin mas" />
