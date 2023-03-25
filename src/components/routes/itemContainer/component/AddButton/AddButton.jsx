@@ -1,12 +1,10 @@
 import React, {useContext} from "react";
-import carritoSVG from "./../../../../../img/cartSVG.svg"
 import { CartContext } from "../../../../../contexts/CartContext";
 import './css/styles.css'
 import BotonCarrito from "../../../../common/BotonCarrito/BotonCarrito";
 
 
 const AddButton = ({id, Producto}) =>{
-  console.log(id);
     const {cartContextValue, setCartContext} = useContext(CartContext)
     const onClickHandler = () =>{
         if (cartContextValue[0].title===undefined) {
@@ -40,7 +38,6 @@ const AddButton = ({id, Producto}) =>{
                 )
           }
         }
-        
       }
 
     return <div className="product_addToCart" >

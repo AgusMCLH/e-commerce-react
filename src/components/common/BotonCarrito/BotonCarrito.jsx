@@ -11,14 +11,10 @@ const BotonCarrito = ()=>{
     },[])
 
     const onClickHandler=()=>{
-        if(boton.classList.contains('confirm')){
-            boton.classList.add('done')
-            document.getElementById('BotonConfirmarCarrito__text').innerText='Agregado'
-            console.log(document.getElementById('BotonConfirmarCarrito__text'));
-        } else {
+        
             boton.classList.add('confirm')
-            document.getElementById('BotonConfirmarCarrito__text').innerText='Esta Seguro?'
-        }
+            document.getElementById('BotonConfirmarCarrito__text').innerText='Agregado'
+        
     }
 
     const onBlurHandler = ()=>{
@@ -27,18 +23,18 @@ const BotonCarrito = ()=>{
                 boton.classList.remove('confirm')
                 boton.classList.remove('done')
                 document.getElementById('BotonConfirmarCarrito__text').innerText='Agregar al carrito'
-            }, 3000)
+            }, 1500)
         }
     }
     
     
 
     return<>
-    <button className="BotonCarrito_fancy" id="BotonConfirmarCarrito" onClick={()=>onClickHandler()} onBlur={(()=>onBlurHandler())}>
+    <button className="BotonCarrito_fancy" id="BotonConfirmarCarrito" onClick={()=>onClickHandler()} onMouseOut={(()=>onBlurHandler())}>
         <div className='icon'>
             <img src={carticon} className='fa fa-trash-o'></img>
-            <img src={preguntaicon} className='fa fa-question'></img>
-            <img src={tickicon} className='fa fa-check'></img>
+            <img src={tickicon} className='fa fa-question'></img>
+
         </div>
         <div className='text'>
             <span ><p id="BotonConfirmarCarrito__text">Agregar al Carrito</p></span>

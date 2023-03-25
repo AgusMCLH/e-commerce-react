@@ -10,7 +10,7 @@
   overflow: hidden;
   position: fixed;
   height: 100vh;
-  background-color: rgb(255, 223, 181);
+  background-color: rgb(99, 194, 186);
   top: 0px;
   right: 0px;
   z-index: 30;
@@ -76,21 +76,26 @@
   width: 90%;
   height: 70vh;
   align-self: center;
-  border: red 1px solid;
+  border-radius: 5px;
+  background-color: rgb(167, 206, 203);
+  border: 1px solid blue;
 }
 .CartMenu_Window .productModal_Container .CartProduct_list {
+  margin: 2px auto;
   overflow-y: auto;
   overflow-x: hidden;
-  width: 100%;
-  height: 100%;
-  border: yellow 1px solid;
+  width: 99%;
+  height: 85%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
+  border: 1px solid red;
 }
 .CartMenu_Window .productModal_Container .CartProduct_list .cartProduct_Container {
   height: 50px;
-  width: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
   display: flex;
   align-items: center;
   -moz-column-gap: 5px;
@@ -122,6 +127,17 @@
 .CartMenu_Window .productModal_Container .CartProduct_list .cartProduct_Container .CartPriceQuant_Container {
   width: 50px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.CartMenu_Window .productModal_Container .CartProduct_list .cartProduct_Container .CartPriceQuant_Container .Cart_Price {
+  width: 100%;
+}
+.CartMenu_Window .productModal_Container .CartProduct_list .cartProduct_Container .CartPriceQuant_Container .Cart_Quantity {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
 }
 .CartMenu_Window .productModal_Container .CartProduct_list .cartProduct_Container .CartDeleteButton_Container img {
   width: 20px;
@@ -132,6 +148,19 @@
 }
 .CartMenu_Window .productModal_Container .CartProduct_list .cartProduct_Container .CartDeleteButton_Container img:hover {
   opacity: 1;
+}
+.CartMenu_Window .productModal_Container .CartSubtotal_Container {
+  width: 100%;
+  height: 14%;
+  border: 1px solid yellow;
+  display: flex;
+}
+.CartMenu_Window .productModal_Container .CartSubtotal_Container .SubTotal_Text p {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Courier New", Courier, monospace;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .CartMenu_Window .CartButton_Container {
   width: 400px;
