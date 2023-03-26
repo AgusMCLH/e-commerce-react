@@ -167,5 +167,34 @@
                 }
             }
         }
+        .privacyWarning{
+            font-size: 12px;
+            a{
+                color: #d600a4;
+            }
+        }
+        .termsandconditions_Checkbox_container{
+            margin: 20px 0px 0px 20px;
+            display: flex;
+            a{
+                color: #d600a4;
+            }
+        }
+        .PlaceOrder_Button{
+            border: none;
+            margin-top: 10px;
+            width: 100%;
+            height: 40px;
+            background-color: $green;
+            font-size: 20px;
+            font-weight: 800;
+            color: white;
+            cursor: pointer;
+            &:disabled{
+                background-color: #333333;
+                cursor: auto;
+            }
+        }
+
     }
 }

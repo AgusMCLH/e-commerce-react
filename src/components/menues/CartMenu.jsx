@@ -13,12 +13,8 @@ const CartMenu = ()=>{
 
     const onClickHandlerEliminarProducto = (id)=>{ 
         let index=cartContextValue.findIndex((el)=> el.id===id);
-        console.log('antes de borrar', cartContextValue);
-        console.log('indice de elemento a borrar: ', index);
         let ArrayAuxiliar = [...cartContextValue];
         ArrayAuxiliar.splice(index,1);
-        console.log('array auxiliar ', ArrayAuxiliar);
-        console.log(cartContextValue.length);
         if (index===0&&cartContextValue.length===1) {
             setCartContext([{}])
         }else{
@@ -40,7 +36,6 @@ const CartMenu = ()=>{
         
     },[cartContextValue])
     
-    console.log("subtotal",subTotalPrecio);
 
 
     return <div className={cartMenuActive?"CartMenu_Window CartMenu_active":"CartMenu_Window CartMenu_unactive"}>

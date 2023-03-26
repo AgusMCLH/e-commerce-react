@@ -8,7 +8,6 @@ import { getFirestore, getDocs, collection, query, where} from 'firebase/firesto
 const ListItemByCategory =()=>{
     const [listaDeProductos, funcionAgrgarProducto] = useState([]);
     let {categ, type}=useParams()
-    console.log(categ, type);
 
 
     
@@ -16,7 +15,6 @@ const ListItemByCategory =()=>{
       const db = getFirestore();
       const itemsCollection = collection(db, 'items');
       let q = ()=>{
-        console.log(categ);
         if (type===undefined){
           return query(itemsCollection, where("category", "==", categ))
         }else{

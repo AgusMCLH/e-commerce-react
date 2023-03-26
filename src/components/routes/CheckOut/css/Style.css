@@ -155,4 +155,32 @@
 }
 .CheckOut_Page .CheckOut_DataContainer .CheckOut_ProductList_Container .CheckOut_ProductList_Container_LastRow .CheckOut_ProductList_Container_LastRow_Total {
   color: rgb(19, 111, 99);
+}
+.CheckOut_Page .CheckOut_DataContainer .privacyWarning {
+  font-size: 12px;
+}
+.CheckOut_Page .CheckOut_DataContainer .privacyWarning a {
+  color: #d600a4;
+}
+.CheckOut_Page .CheckOut_DataContainer .termsandconditions_Checkbox_container {
+  margin: 20px 0px 0px 20px;
+  display: flex;
+}
+.CheckOut_Page .CheckOut_DataContainer .termsandconditions_Checkbox_container a {
+  color: #d600a4;
+}
+.CheckOut_Page .CheckOut_DataContainer .PlaceOrder_Button {
+  border: none;
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(19, 111, 99);
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  cursor: pointer;
+}
+.CheckOut_Page .CheckOut_DataContainer .PlaceOrder_Button:disabled {
+  background-color: #333333;
+  cursor: auto;
 }/*# sourceMappingURL=Style.css.map */
