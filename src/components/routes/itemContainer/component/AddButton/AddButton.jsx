@@ -43,7 +43,6 @@ const AddButton = ({id, Producto}) =>{
     return <div className="product_addToCart" >
     <div onClick={onClickHandler}>
       <BotonCarrito></BotonCarrito>
-      {/* <img src={carritoSVG} alt="cart icon" /><p>Add to cart</p> */}
     </div>
   </div>
 }

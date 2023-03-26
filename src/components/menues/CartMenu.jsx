@@ -31,10 +31,11 @@ const CartMenu = ()=>{
     let [subTotalPrecio, setSubTotalPrecio] = useState(0)
     useEffect(()=>{
         if (cartContextValue[0].hasOwnProperty('id')){
-            cartContextValue.map((el)=>{
-                console.log(el.price*el.quantity);
-                setSubTotalPrecio(subTotalPrecio+el.price*el.quantity)
-            })
+            let precioAux = 0;
+            cartContextValue.map((el)=>precioAux+=el.price*el.quantity)
+            setSubTotalPrecio(precioAux)
+        }else{
+            setSubTotalPrecio(0);
         }
         
     },[cartContextValue])
@@ -73,7 +74,7 @@ const CartMenu = ()=>{
                     }): ''}
                 </div>
                     <div className="CartSubtotal_Container">
-                        <div className="SubTotal_Text"><p>Subtotal: ${subTotalPrecio}</p></div>
+                        <div className="SubTotal_Text"><p>Subtotal: ${Math.round(subTotalPrecio)}</p></div>
                     </div>
             </div>
         <div className="CartButton_Container"><Link to={'/checkout'}>Checkout</Link></div>

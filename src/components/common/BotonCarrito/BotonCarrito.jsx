@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './css/style.css'
 import tickicon from './../../../img/cheque.png'
-import preguntaicon from './../../../img/pregunta.png'
 import carticon from './../../../img/cartSVG.svg'
 
 const BotonCarrito = ()=>{
@@ -20,9 +19,13 @@ const BotonCarrito = ()=>{
     const onBlurHandler = ()=>{
         if (boton.classList.contains('confirm') || boton.classList.contains('done')) {
             setTimeout(()=>{
-                boton.classList.remove('confirm')
-                boton.classList.remove('done')
-                document.getElementById('BotonConfirmarCarrito__text').innerText='Agregar al carrito'
+                console.log(document.getElementById('BotonConfirmarCarrito__text'));
+                if (document.getElementById('BotonConfirmarCarrito__text')!==null) {
+                    boton.classList.remove('confirm')
+                    boton.classList.remove('done')
+                    document.getElementById('BotonConfirmarCarrito__text').innerText='Agregar al carrito'
+                }
+                
             }, 1500)
         }
     }
@@ -32,8 +35,8 @@ const BotonCarrito = ()=>{
     return<>
     <button className="BotonCarrito_fancy" id="BotonConfirmarCarrito" onClick={()=>onClickHandler()} onMouseOut={(()=>onBlurHandler())}>
         <div className='icon'>
-            <img src={carticon} className='fa fa-trash-o'></img>
-            <img src={tickicon} className='fa fa-question'></img>
+            <img src={carticon} className='fa fa-trash-o' alt="icono carrito"></img>
+            <img src={tickicon} className='fa fa-question' alt="icono tick"></img>
 
         </div>
         <div className='text'>
