@@ -1,1 +1,158 @@
-/*# sourceMappingURL=Style.css.map */
+.CheckOut_Page {
+  width: 90%;
+  margin: auto;
+}
+.CheckOut_Page .Page_Title {
+  width: 100%;
+}
+.CheckOut_Page .Page_Title h2 {
+  width: 100%;
+  text-align: center;
+  color: rgb(19, 111, 99);
+}
+.CheckOut_Page .Page_SubTitle {
+  color: rgb(19, 111, 99);
+  margin: 20px 0px 0px 20px;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_Form_Container form {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_Form_Container form .divider {
+  width: 48%;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_Form_Container form .divider div label {
+  font-size: 13px;
+  font-weight: 700;
+  display: block;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_Form_Container form .divider div label::after {
+  content: "*";
+  color: red;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_Form_Container form .divider div .NotReq::after {
+  content: "(optional)";
+  color: #313841;
+  font-size: 10px;
+  position: relative;
+  top: -3px;
+  left: 3px;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_Form_Container form .divider div input {
+  width: 100%;
+  height: 40px;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_Form_Container form .divider div input:focus {
+  outline: none;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_Form_Container form .divider .flex {
+  gap: 20px;
+  display: flex;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_Form_Container form .divider .flex div {
+  width: 100%;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_Form_Container form .divider .flex div input {
+  width: 100%;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_Form_Container form .CheckOut_Form_Notes_container {
+  width: 48%;
+  background-color: rgb(167, 206, 203);
+  border-radius: 5px;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_Form_Container form .CheckOut_Form_Notes_container .CheckOut_Form_Notes_CheckBox_Container {
+  display: flex;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_Form_Container form .CheckOut_Form_Notes_container .CheckOut_Form_Notes_CheckBox_Container p {
+  font-size: 25px;
+  font-weight: 900;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_Form_Container form .CheckOut_Form_Notes_container .CheckOut_Form_Notes_CheckBox_Details {
+  width: 98%;
+  background-color: white;
+  margin: auto;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_Form_Container form .CheckOut_Form_Notes_container .CheckOut_Form_Notes_CheckBox_Details textarea {
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 326px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_Form_Container form #CheckOut_Form_Button_Submit {
+  display: none;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_ProductList_Container {
+  border: 1px solid rgba(41, 41, 41, 0.5215686275);
+  min-height: 30px;
+  width: 100%;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_ProductList_Container .CheckOut_ProductList_Container_FirstRow {
+  background-color: rgb(19, 111, 99);
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_ProductList_Container .CheckOut_ProductList_Container_FirstRow .CheckOut_ProductList_Container_FirstRow_Product {
+  width: 70%;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_ProductList_Container .CheckOut_ProductList_Container_FirstRow p {
+  margin-left: 10px;
+  font-weight: 800;
+  color: white;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_ProductList_Container .CheckOut_ProductList_PrdouctListed {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(41, 41, 41, 0.5215686275);
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_ProductList_Container .CheckOut_ProductList_PrdouctListed div {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_ProductList_Container .CheckOut_ProductList_PrdouctListed .CheckOut_ProductList_ProductListed_Product {
+  display: flex;
+  width: 70%;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_ProductList_Container .CheckOut_ProductList_PrdouctListed .CheckOut_ProductList_ProductListed_Product .CheckOut_ProductList_ProductListed_Product_Name {
+  max-width: 90%;
+  overflow: hidden;
+  margin-left: 20px;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_ProductList_Container .CheckOut_ProductList_PrdouctListed .CheckOut_ProductList_ProductListed_Product .CheckOut_ProductList_ProductListed_Product_Quantity {
+  margin-left: 10px;
+  font-weight: 800;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_ProductList_Container .CheckOut_ProductList_PrdouctListed .CheckOut_ProductList_ProductListed_Subtotal .CheckOut_ProductList_ProductListed_SubTotal_Price {
+  margin-left: 20px;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_ProductList_Container .CheckOut_ProductList_Container_LastRow {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_ProductList_Container .CheckOut_ProductList_Container_LastRow div {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_ProductList_Container .CheckOut_ProductList_Container_LastRow p {
+  margin-left: 10px;
+  font-weight: 800;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_ProductList_Container .CheckOut_ProductList_Container_LastRow .CheckOut_ProductList_Container_LastRow_TotalText {
+  width: 70%;
+}
+.CheckOut_Page .CheckOut_DataContainer .CheckOut_ProductList_Container .CheckOut_ProductList_Container_LastRow .CheckOut_ProductList_Container_LastRow_Total {
+  color: rgb(19, 111, 99);
+}/*# sourceMappingURL=Style.css.map */

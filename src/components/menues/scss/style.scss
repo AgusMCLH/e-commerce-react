@@ -166,6 +166,12 @@
                 }
             }
         }
+        .NoneProductCart{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+        }
     }
     .CartButton_Container{
         width: 400px;
