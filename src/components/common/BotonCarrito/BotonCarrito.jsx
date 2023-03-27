@@ -19,7 +19,6 @@ const BotonCarrito = ()=>{
     const onBlurHandler = ()=>{
         if (boton.classList.contains('confirm') || boton.classList.contains('done')) {
             setTimeout(()=>{
-                console.log(document.getElementById('BotonConfirmarCarrito__text'));
                 if (document.getElementById('BotonConfirmarCarrito__text')!==null) {
                     boton.classList.remove('confirm')
                     boton.classList.remove('done')

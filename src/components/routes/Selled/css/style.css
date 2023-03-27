@@ -1,0 +1,25 @@
+.MainImage{
+    /* margin: auto; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.MainImage img{
+    background-color: rgb(205, 205, 205);
+    border-radius: 5px;
+    width: 40%;
+}
+.MainImage .SP{
+    font-size: 30px;
+    font-weight: 500;
+}
+.MainImage .TRSID{
+    font-weight: 500;
+}
+.MainImage .TRSID span{
+    font-weight: 900;
+    text-decoration: underline;
+}

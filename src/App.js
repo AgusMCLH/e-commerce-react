@@ -11,6 +11,7 @@ import ItemContainer from './components/routes/itemContainer/itemContainer';
 
 import CheckOut from './components/routes/CheckOut/CheckOut';
 import ListItemByCategory from './components/routes/ListItemByCategory';
+import SelledPage from './components/routes/Selled/SelledPage';
 
 function App() {
   return (
@@ -40,6 +41,11 @@ function App() {
               exact
               path="/checkout"
               element={<CheckOut></CheckOut>}
+            ></Route>
+            <Route
+              exact
+              path="/checkout/succesfull-purchase/:id"
+              element={<SelledPage></SelledPage>}
             ></Route>
           </Routes>
         </BrowserRouter>

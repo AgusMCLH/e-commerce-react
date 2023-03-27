@@ -2,9 +2,11 @@ import React, { useState, useContext, useEffect} from "react";
 import './css/style.css'
 import { CartContext } from "../../../contexts/CartContext";
 import { getFirestore, collection, addDoc} from 'firebase/firestore'
+import { useNavigate } from "react-router";
 
 const CheckOut = ()=>{
-    const {cartContextValue, setCartMenuActive} = useContext(CartContext)
+    const navigate = useNavigate()
+    const {cartContextValue, setCartMenuActive, setCartContext} = useContext(CartContext)
     let [checkboxNotesBool, setCheckboxNotesBool] = useState(false)
     let [checkboxTermsAndConditions, setCheckboxTermsAndConditions] = useState(false)
     let [form, setForm] = useState({
@@ -20,11 +22,10 @@ const CheckOut = ()=>{
         Notas:'',
         Productos:cartContextValue
 })
-    console.log(form);
 
     useEffect(()=>{
         setCartMenuActive(false)
-    },[])
+    },[setCartMenuActive])
 
     const CheckboxTACOnChangeHandler = ()=>{
         setCheckboxTermsAndConditions(document.getElementById('termsandconditions_Checkbox').checked)
@@ -51,14 +52,27 @@ const CheckOut = ()=>{
         ev.preventDefault()
         const db=getFirestore()
         const OrdersFormCollection = collection(db, 'orders')
-        addDoc(OrdersFormCollection, form).then((snapshot)=>{console.log(snapshot.id);})
+        addDoc(OrdersFormCollection, form).then((snapshot)=>{navigate(`./succesfull-purchase/${snapshot.id}`)})
+        setCartContext([{}])
+        setForm({
+            FirstName:'',
+            LastName:'',
+            Company:'',
+            Country:'',
+            City:'',
+            State:'',
+            ZIP:'',
+            Address:'',
+            Phone:'',
+            Notas:'',
+            Productos:cartContextValue
+    })
     }
 
     const InputOnChangeHandler =(ev)=>{
         const {name, value} = ev.target;
         setForm({...form,[name]: value})
     }
-    console.log(form);
     return<div className="CheckOut_Page">
         <div className="Page_Title"><h2>CHECKOUT</h2></div>
         <div className="Page_SubTitle"><h2>Billing Details</h2></div>
@@ -152,10 +166,10 @@ const CheckOut = ()=>{
                     </>}
                 </div>
                     <div className="privacyWarning">
-                        <p>Your personal data will be used to process your order, support your experience throughout this website, and for other purposed described in our<a target='_blank' href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> privacy policy.</a></p>
+                        <p>Your personal data will be used to process your order, support your experience throughout this website, and for other purposed described in our<a target='_blank' rel="noreferrer" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> privacy policy.</a></p>
                     </div>
                     <div className="termsandconditions_Checkbox_container">
-                        <input type="checkbox" name="termsandconditions_Checkbox" id="termsandconditions_Checkbox" onChange={()=>CheckboxTACOnChangeHandler()}/><p>I have read and agree to the website <a target='_blank' href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">terms and conditions</a></p>
+                        <input type="checkbox" name="termsandconditions_Checkbox" id="termsandconditions_Checkbox" onChange={()=>CheckboxTACOnChangeHandler()}/><p>I have read and agree to the website <a target='_blank' rel="noreferrer" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">terms and conditions</a></p>
                     </div>
                     {checkboxTermsAndConditions && cartContextValue[0].hasOwnProperty('id')?<button onClick={()=>{PlaceOrderButtonOnClickHandler()}} className="PlaceOrder_Button">PLACE ORDER</button>:<button disabled className="PlaceOrder_Button">PLACE ORDER</button>}
                     

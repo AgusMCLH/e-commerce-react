@@ -161,6 +161,8 @@
 }
 .CheckOut_Page .CheckOut_DataContainer .privacyWarning a {
   color: #d600a4;
+  -webkit-text-decoration: double;
+          text-decoration: double;
 }
 .CheckOut_Page .CheckOut_DataContainer .termsandconditions_Checkbox_container {
   margin: 20px 0px 0px 20px;
