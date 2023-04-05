@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect} from "react";
-import './css/style.css'
+import './css/Style.css'
 import { CartContext } from "../../../contexts/CartContext";
 import { getFirestore, collection, addDoc} from 'firebase/firestore'
 import { useNavigate } from "react-router";
